@@ -1,3 +1,113 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+h1 {
+    position: relative;
+    color: #78A083;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+.info{
+    font-size: 15px;
+    position: relative;
+    top: -30px;
+    color: #78A083;
+}
+
+body {
+	font-family: Abel, sans-serif;
+	background-color: #35374B;
+	margin: 0;
+	padding: 0;
+}
+.box{
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 45px;
+    background-position: center;
+}
+
+.name {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+.bio{
+    position: relative;
+    color: #78A083;
+    top: -20px;
+}
+.follow {
+	font-size: 18px;
+	margin-bottom: 30px;
+	max-width: 500px;
+	margin: 0 auto;
+    color: #78A083;
+}
+
+.social-links {
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+	margin: 0;
+}
+
+.social-links li {
+	display: inline-block;
+	margin-right: 10px;
+    position: relative;
+}
+
+.social-links a {
+	text-decoration: none;
+	color: #78A083;
+	font-size: 24px;
+}
+
+.social-links li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #78A083;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.social-links li:hover:after{
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+	
+
+</style>
+
+
 <html>
     <head>
       <title>
@@ -5,13 +115,19 @@
       </title>
     </head>
     <body>
-      <h1>Nama : Mohamad Arung Sultan Bahri</h1>
-      <h1>Nim  : 233307081</h1>
-      <h3>Pilih jenis kelamin</h3>
-      <form>
-        <input type="radio" name="gender" value="laki-laki"> Laki-Laki<br>
-        <input type="radio" name="gender" value="perempuan"> Perempuan<br>
-        <input type="submit" value="Simpan">
-      </form>
+        <div class="profile-container">
+            <div class="box">
+            <img src="1315957.jpg" alt="Profile Picture" class="profile-picture">
+            <h1 class="name">Mohamad Arung Sultan Bahri</h1>
+            <h5 class="info">2333070 - Ti2C - Politeknik Negeri Madiun - Listening Music</h5>
+            <p class="bio">Dunno what imma gonna put in there but welcome everyones</p>
+            <p class="follow">Nothing special in here</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/your-linkedin-profile/">LinkedIn</a></li>
+                <li><a href="https://github.com/zwenm">GitHub</a></li>
+                <li><a href="https://www.facebook.com/bandeeto/">Facebook</a></li>
+            </ul>
+            </div>
+        </div>
     </body>
 </html>
