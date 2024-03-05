@@ -1,33 +1,110 @@
 <style>
-.profile-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 1.5rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 3rem 9%;
+        width: 100%;
+        background: #9AD0C2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    body{
+        font-family: "DM Sans", sans-serif;
+        background: #265073;
+    }
+    section{
+        min-width: 100vh;
+        padding: 10rem 9% 10rem;
+    }
+    .home-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .pictjpg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .pictjpg{
+        border-radius: 50%;
+    }
+    .pictjpg img{
+        position: relative;
+        top: 3rem;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .home-content h1{
+        font-size: 7rem;
+        font-weight: 700;
+        margin-top: 1.5rem;
+        line-height: 1;
+        color: #F1FADA;
+    }
+    .copyright{
+        background: #9AD0C2;
+        top: 0;
+        left: 0;
+        padding: 3rem 9%;
+        width: 100%;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 </style>
 
-    <head>
-        <script>
-            var nama = "Mohamad Arung Sultan Bahri";
-            var nim  = "233307081";
-            var hobi = "Mendengarkan Lagu";
-            var webname = "Profilku"
-            var visitorCount = 5031;
-            var isActive = true;
-            var url = "http://127.0.0.1:3000/index.html";
-
-            alert("Selamat datang di website " + webname);
-
-            document.write("Nama pemilik: " + nama + "<br>");
-            document.write("Nim         : " + nim + "<br>");
-            document.write("Hobi        : " + hobi + "<br>");
-            document.write("Url situs: " + url + "<br>");  
-        </script>
-    </head>
 <html>
+    <head>
+       
+    </head>
+    <body>
+        
+        <header class="header">
 
+
+        </header>
+
+    <section class="home" id="home">
+        <div class="pictjpg">
+            <img src="97780035_p0_master1200.jpg" alt="Pictures">
+        </div>
+
+        <div class="home-content">
+            <h1>Belajar Variabel</h1>
+        </div>
+    </section>
+    <script>
+        var nama = "Mohamad Arung Sultan Bahri";
+        var nim  = "233307081";
+        var hobi = "Mendengarkan Lagu,Bermain Game";
+        var webname = "Profilku"
+        var visitorCount = 5031;
+        var isActive = true;
+        var url = "http://127.0.0.1:3000/index.html";
+    
+        alert("Selamat datang di website " + webname);
+    
+        document.write("<p>Nama pemilik: " + nama + "</p>");
+        document.write("<p>Nim   : " + nim + "</p>");
+        document.write("<p>Hobi        : " + hobi + "</p>");
+        document.write("<p>Url situs: " + url + "</p>");  
+    </script> 
+    <footer>
+        <p class="copyright">Loren Ipsum</p>
+    </footer>
+    </body>
 </html>
+
